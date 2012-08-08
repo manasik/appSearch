@@ -27,8 +27,8 @@ public class MyActivity extends Activity
         intent.addCategory(Intent.CATEGORY_LAUNCHER);
 
         PackageManager packageManager = this.getPackageManager();
-        Search search = new Search();
-        search.extractAllTheAppsAvailableOnTheDevice(intent, packageManager, appSearch);
+        Search search = new Search(intent,packageManager,appSearch);
+        search.searchIfTheEnteredTextAppExistsInTheList();
 
     }
 }
