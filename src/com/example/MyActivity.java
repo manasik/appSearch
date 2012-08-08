@@ -29,6 +29,5 @@ public class MyActivity extends Activity
         PackageManager packageManager = this.getPackageManager();
         Search search = new Search(intent,packageManager,appSearch);
         search.searchIfTheEnteredTextAppExistsInTheList();
-
     }
 }

@@ -25,6 +25,8 @@ public class Search {
         for(ResolveInfo rInfo : list) {
             results.add(rInfo.activityInfo.applicationInfo.loadLabel(packageManager).toString());
         }
+
+
         return results;
 }
 
